@@ -1,10 +1,10 @@
 package io.github.hmojicag.hackerrankinterviewkit.arrays;
 
-import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.List;
+
+import static io.github.hmojicag.hackerrankinterviewkit.arrays.Utils.assertList;
 
 public class ArraysLeftRotationTests {
 
@@ -32,11 +32,6 @@ public class ArraysLeftRotationTests {
         assertList(expected, rotated);
     }
 
-    private static void assertList(List<Integer> expected, List<Integer> actual) {
-        Assert.assertEquals(expected.size(), actual.size());
-        for (int i = 0; i < expected.size(); i++) {
-            Assert.assertEquals(expected.get(i), actual.get(i));
-        }
-    }
+
 
 }
